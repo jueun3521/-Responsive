@@ -381,3 +381,145 @@
         padding: 2.5rem 0;
     }
     }
+
+/* pc용 css */
+    @media screen and (min-width: 960px) {
+        .wrap {
+        position: relative;
+        width: 90%;
+        }
+        /* 인포메이션 영역 */
+        .info_section {
+        order: 0;
+        position: absolute;
+        top: 1.875rem;
+        right: 1.875rem;
+        z-index: 30;
+        width: auto;
+        border-bottom: 0;
+        }
+        .info_list li {
+        width: auto;
+        margin-left: 0.625rem;
+        }
+        .info_list li a {
+        padding: 0;
+        }
+        /* 헤더 영역 */
+        .header {
+        order: 1;
+        justify-content: flex-end;
+        /* 흐름에 따라서 배치를 하겠다~ */
+        position: static;
+        }
+        .logo {
+        width: 12.5%;
+        }
+        .nav {
+        display: flex;
+        align-items: center;
+        width: 87.6%;
+        position: static;
+        }
+        .gnb {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        width: 100%;
+        }
+        .gnb li {
+        display: block;
+        margin-left: 5.20833333333333%;
+        background: none;
+        }
+        .gnb li a {
+        width: auto;
+        padding: 0;
+        text-indent: 0;
+        }
+        .gnb li span {
+        display: none;
+        }
+        .menu_toggle_btn {
+        display: none;
+        }
+        /* 슬라이드 영역 */
+        .slider_section {
+        order: 2;
+        width: 50%;
+        }
+        /* 최근글, 인기글 영역 */
+        .latest_post_section,
+        .popular_post_section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        padding-left: 0;
+        padding-right: 0;
+        }
+        /* 갤러리영역 */
+        .gallery_section {
+        order: 3;
+        width: 27.08333333333333%;
+        }
+        .gallery_list {
+        display: block;
+        }
+        .gallery_list li {
+        width: auto;
+        }
+        .gallery_list li:nth-child(2) {
+        margin-top: 1.875rem;
+        margin-left: 0;
+        }
+        /* 인기 검색어 영역 */
+        .rankup_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 22.91666666666667%;
+        padding: 0;
+        }
+        .rankup_list {
+        display: block;
+        }
+        .rankup_list li {
+        width: auto;
+        text-align: left;
+        counter-increment: rankup-counter;
+        }
+        .rankup_list li:nth-child(2) {
+        margin-top: 0.938rem;
+        }
+        .rankup_list li:before {
+        padding-right: 0.375rem;
+        font-weight: bold;
+        color: white;
+        text-shadow: 0px 1px 1px #428e9e;
+        content: counter(rankup-counter)".";
+        }
+        .rankup_list li a {
+        display: inline;
+        border: 0;
+        padding: 0;
+        }
+        /* 배너 영역 */
+        .banner_section {
+        order: 6;
+        width: 22.91666666666667%;
+        }
+        /* 소셜 네트워크 */
+        .social_section {
+        order: 7;
+        width: 17.08333333333333%;
+        }
+        .footer {
+        order: 9;
+        }
+        .footer p {
+        text-align: left;
+        padding-left: 3.125%;
+        }
+    }
