@@ -71,7 +71,7 @@
 .gnb li span{
     width: 20%;
     text-indent: -9999px;
-    background: url(../images/s_images/menu_toggle_btn.png) center no-repeat;
+    background: url(../images/s_images/sub_menu_toggle_btn.png) center no-repeat;
     cursor: pointer; /*손가락 포인트*/
 }
 .menu_toggle_btn{
@@ -199,5 +199,98 @@ span.next_btn{
 }
 .rankup_list{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.rankup_list li{
+    width: 47.916666666666666666666666666667%;
+    margin-top: 0.938rem;
+    text-align: center;
+    font-weight: bold;
+}
 
+.rankup_list li:first-child,
+.rankup_list li:nth-child(2){
+    margin-top: 0;
+}
+.rankup_list li a{
+    display: block;
+    padding: 0.625rem 0;
+    border:  1px solid #fff;
+    border-radius: 5px;
+}
+/* 배너 영역 */
+.banner_section{
+    order: 8;
+}
+.banner_box_01{
+    background: #e6567a;
+}
+.banner_box_01 a{
+    display: block;
+    padding: 1.875rem 0;
+    text-align: center;
+}
+.banner_box_02{
+    background: #c44968;
+}
+.banner_list{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.875rem 12.5%;
+}
+
+/* 소셜 네트워크 영역 */
+.social_section{
+    order: 9;
+    padding: 1.5rem 12.5%;
+    background-color: #fff;
+}
+.social_list{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 푸터영역 */
+.footer{
+    order: 10;
+    width: 100%;
+    background-color: #474747;
+}
+.footer p{
+    padding: 1.25rem;
+    font-size: 0.813rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0px 1px 1px #191919;
+}
+
+/* 태블릿용 css */
+@media screen and (min-width:768px) {
+    .wrap{
+        flex-flow: row wrap;
+    }
+    /* 헤더 */
+    .header{
+        flex-direction: row;
+    }
+    .logo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 15.625%;
+        padding: 0;
+        z-index: 10;
+    }
+    .logo a{
+        display: block;
+        padding: 3.125rem 0;
+    }
+    .nav{
+        position: relative;
+        min-height: 5rem;
+        background-color: #2ecc71;
+    }
 }
