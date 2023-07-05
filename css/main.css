@@ -422,7 +422,7 @@
         position: static;
         }
         .gnb {
-        display: flex;
+        display: flex !important;
         flex-direction: row;
         position: static;
         width: 100%;
