@@ -420,4 +420,26 @@
     .sub_header_section{
         order: 2;
     }
+    /* 콘텐츠 영역 */
+    .content_section{
+        order: 3;
+        padding: 3.750rem;
+    }
+    .gallery_list li{
+        width:23.92857142857143%;
+    }
+    .gallery_list li:nth-child(3),
+    .gallery_list li:nth-child(4){
+        margin-top: 0;
+    }
+
+    /* 푸터 영역 */
+    .footer{
+        order: 4;
+    }
+    .footer p{
+        padding-left:3.125%;
+        /* 30px ÷ 960px */
+        text-align:left;
+    }
 }
